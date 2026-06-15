@@ -14,7 +14,8 @@
   <version>${revision}${changelist}</version>
   <packaging>hpi</packaging>
 
-  <name>TODO Plugin</name>
+  <name>Endtest Plugin</name>
+  <description>Run Endtest automated tests from Jenkins Pipeline jobs and wait for single or multiple execution results.</description>
   <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
   <licenses>
     <license>
