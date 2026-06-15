@@ -14,7 +14,7 @@
   <version>${revision}${changelist}</version>
   <packaging>hpi</packaging>
 
-  <name>Endtest Plugin</name>
+  <name>Endtest</name>
   <description>Run Endtest automated tests from Jenkins Pipeline jobs and wait for single or multiple execution results.</description>
   <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
   <licenses>
