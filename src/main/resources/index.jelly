@@ -1,4 +1,4 @@
 <?jelly escape-by-default='true'?>
 <div>
-    TODO
+    Run Endtest automated tests from Jenkins Pipeline jobs and wait for single or multiple execution results.
 </div>

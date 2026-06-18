@@ -18,7 +18,6 @@ It supports individual executions and requests that start multiple executions, i
 
 ## Requirements
 
-* Jenkins 2.479.3 or newer
 * Pipeline plugin
 * An Endtest account with API credentials
 

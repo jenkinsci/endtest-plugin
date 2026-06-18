@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
+
+    <f:entry
+        title="Endtest API request"
+        field="apiRequest"
+        description="The Endtest API request used to start one or more executions.">
+        <f:textarea/>
+    </f:entry>
+
+    <f:entry
+        title="Jenkins credential ID"
+        field="credentialsId"
+        description="The ID of the Jenkins credential containing the Endtest App ID and App Code. Optional when both values are included in the API request.">
+        <f:textbox/>
+    </f:entry>
+
+    <f:entry
+        title="Timeout in minutes"
+        field="timeoutMinutes"
+        description="Maximum number of minutes to wait for the Endtest executions to finish.">
+        <f:number min="1" max="1440" default="30"/>
+    </f:entry>
+
+    <f:entry
+        title="Polling interval in seconds"
+        field="pollIntervalSeconds"
+        description="Number of seconds between Endtest result checks.">
+        <f:number min="5" max="300" default="30"/>
+    </f:entry>
+
+    <f:entry
+        title="Fail build"
+        field="failBuild"
+        description="Fail the Jenkins Pipeline when Endtest reports failed assertions or execution errors.">
+        <f:checkbox default="true"/>
+    </f:entry>
+
+    <f:entry
+        title="Results format"
+        field="resultsFormat"
+        description="The Endtest API results format.">
+        <f:select default="json-light">
+            <f:option value="json-light">json-light</f:option>
+            <f:option value="json">json</f:option>
+        </f:select>
+    </f:entry>
+
+</j:jelly>
